@@ -8,7 +8,6 @@ All Classes Will Be Moved to Separate Files
 
 
 import React from 'react';
-import App from './App.js';
 
 // - Contact Class -> Will fetch and add data from API
 // - Contains members name, phone, etc, in "state"
@@ -42,18 +41,17 @@ class Contact extends React.Component
 
 	getPayload()
 	{
-		const payload = new String(
-						'{' +
-						'address: "' + this.state.address + '", ' +
-						'contactId: "' + this.state.contactId + ', ' +
-						'createDate: "' + this.state.createDate + ', ' +
-						'email: "' + this.state.email + ', ' +
-						'firstName: "' + this.state.firstName + ', ' +
-						'lastName: "' + this.state.lastName + ', ' +
-						'phone: "' + this.state.phone + ', ' + 
-						'userId "' + this.state.userId + '"' +
+		const payload = '{' +
+						'"address:" "' + this.state.address + '", ' +
+						'"contactId:" ' + this.state.contactId + ', ' +
+						'"createDate:" "' + this.state.createDate + ', ' +
+						'"email:" "' + this.state.email + ', ' +
+						'"firstName:" "' + this.state.firstName + '", ' +
+						'"lastName:" "' + this.state.lastName + '", ' +
+						'"phone:" ' + this.state.phone + ', ' + 
+						'"userId:" ' + this.state.userId + '' +
 						'}'
-					);
+					;
 
 		return payload;
 	}

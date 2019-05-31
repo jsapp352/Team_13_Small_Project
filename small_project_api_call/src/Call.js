@@ -92,7 +92,7 @@ class User extends React.Component
 	componentDidMount()
 	{
 		// this.setState({loading:true});
-		fetch('http://localhost:8080/user/1')
+		fetch('http://localhost:8080/user/2')
             .then(response => response.json())
             .then(data => {
                 this.setState({
@@ -131,13 +131,13 @@ class User extends React.Component
 		const payload = '{' +
 							 '"userId:" "' + this.state.userId + '", ' +
 							 '"createdDate:" "' + this.state.createdDate + '", ' +
-							 '"email:" "' + this.state.email + '", ' +
+							 // '"email:" "' + this.state.email + '", ' +
 							 '"firstName:" "' + this.state.firstName + '", ' +
 							 '"lastName:" "' + this.state.lastName + '", ' +
 							 '"password:" "' + this.state.password + '", ' +
 							 '"username:" "' + this.state.username + '", ' +
 							 '"securityAnswer:" "' + this.state.securityAnswer + '", ' +
-							 '"securityQuestion:" "' + this.state.securityQuestion +
+							 '"securityQuestion:" "' + this.state.securityQuestion + '"' +
 							 '}'
 					;
 

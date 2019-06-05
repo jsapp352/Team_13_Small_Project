@@ -46,7 +46,7 @@ public class Contact {
     }
 
     public Contact() {
-
+        this.createDate = new Date();
     }
 
     public long getContactId() {

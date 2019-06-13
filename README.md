@@ -1,3 +1,15 @@
-# Team_13_Small_Project
+## Team 13 Small Project: Contact Manager Application
 
-Team #13, Small Project  (COP 4331, Summer 2019)
+COP 4331, Summer 2019
+
+## Team Members:
+ * **Project Manager**
+   * Tony Giumenta
+ * **API Developers**
+   * Andrew Tschida
+   * Justin Sapp
+ * **Server Management**
+   * Shady Saleh
+ * **React App Developers**
+   * Michael Mignon
+   * Ivan Chaffardett
